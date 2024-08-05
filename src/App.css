@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.icn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 18px;
+    transform: translate(-50%, -50%);
+}
+
+.txthdr {
+    line-height: 93%;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>My Search Engine</ShortName>
+    <Description>Search the web using My Search Engine</Description>
+    <Tags>search engine</Tags>
+    <Contact>contact@mysearchapp.com</Contact>
+    <Url type="text/html" template="https://mysearchapp.com/search?q={searchTerms}" />
+    <Image height="16" width="16" type="image/x-icon">https://mysearchapp.com/favicon.ico</Image>
+    <Developer>Your Name</Developer>
+    <Attribution>My Search Engine</Attribution>
+    <SyndicationRight>open</SyndicationRight>
+    <AdultContent>false</AdultContent>
+    <Language>en-us</Language>
+    <OutputEncoding>UTF-8</OutputEncoding>
+    <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>
