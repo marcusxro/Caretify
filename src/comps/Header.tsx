@@ -1,38 +1,38 @@
-import axios from 'axios';
+// import axios from 'axios';
 import React, { FormEvent, useEffect, useState } from 'react';
-import { CiSearch } from "react-icons/ci";
+// import { CiSearch } from "react-icons/ci";
 import { FaChrome } from "react-icons/fa";
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 
 const Header: React.FC = () => {
-    const [stringVal, setStringVal] = useState<string>('');
-    const location = useLocation();
+    // const [stringVal, setStringVal] = useState<string>('');
+    // const location = useLocation();
     
-    function searchTheWeb(e: FormEvent) {
-        console.log("Preventing default behavior");
-        e.preventDefault();
-        if (stringVal === '') {
-            alert("Please type something");
-            return;
-        }
+    // function searchTheWeb(e: FormEvent) {
+    //     console.log("Preventing default behavior");
+    //     e.preventDefault();
+    //     if (stringVal === '') {
+    //         alert("Please type something");
+    //         return;
+    //     }
 
-        axios.get(`https://www.googleapis.com/customsearch/v1?key=AIzaSyA9ND_-eMexUUINOszh_Wy-HstikB6qlZM&cx=b3f81ea3f7409464f&q=${stringVal}`)
-            .then((res) => {
-                console.log(res);
-            }).catch((err) => {
-                console.log(err);
-            });
-    }
+    //     axios.get(`https://www.googleapis.com/customsearch/v1?key=AIzaSyA9ND_-eMexUUINOszh_Wy-HstikB6qlZM&cx=b3f81ea3f7409464f&q=${stringVal}`)
+    //         .then((res) => {
+    //             console.log(res);
+    //         }).catch((err) => {
+    //             console.log(err);
+    //         });
+    // }
 
-    const [boolRender, setBooleanRender] = useState<boolean>(false);
+    // const [boolRender, setBooleanRender] = useState<boolean>(false);
 
-    useEffect(() => {
-        if (location.pathname.includes('/search')) {
-            setBooleanRender(false);
-        } else {
-            setBooleanRender(true);
-        }
-    }, [location.pathname]);
+    // useEffect(() => {
+    //     if (location.pathname.includes('/search')) {
+    //         setBooleanRender(false);
+    //     } else {
+    //         setBooleanRender(true);
+    //     }
+    // }, [location.pathname]);
 
     return (
         <div className='flex flex-col h-[auto] px-7 py-3 items-center bg-[#242424] z-10 gap-3 border-b-[1px] border-b-[#353535] fixed left-0 top-0 w-full'>
