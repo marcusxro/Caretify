@@ -1,16 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-    <ShortName>My Search Engine</ShortName>
-    <Description>Search the web using My Search Engine</Description>
-    <Tags>search engine</Tags>
-    <Contact>contact@mysearchapp.com</Contact>
-    <Url type="text/html" method="get" template="https://caretify.vercel.app/search?q={searchTerms}"/>
-    <Image height="16" width="16" type="image/x-icon">https://caretify.vercel.app/favicon.ico</Image>
-    <Developer>Marcus Salopaso</Developer>
-    <Attribution>CARETIFY</Attribution>
-    <SyndicationRight>open</SyndicationRight>
-    <AdultContent>false</AdultContent>
-    <Language>en-us</Language>
-    <OutputEncoding>UTF-8</OutputEncoding>
-    <InputEncoding>UTF-8</InputEncoding>
+    <ShortName>CareTify</ShortName>
+    <Description>Search CareTify</Description>
+    <Url type="application/rss+xml" template="https://caretify.vercel.app/search?q={searchTerms}"/>
+    <Image width="16" height="16" type="image/x-icon">https://caretify.vercel.app/favicon.ico</Image>
+    <Developer>Marcus S.</Developer>
+    <Attribution>Powered by CareTify</Attribution>
 </OpenSearchDescription>
