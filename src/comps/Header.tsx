@@ -34,6 +34,8 @@ const Header: React.FC = () => {
     //     }
     // }, [location.pathname]);
 
+
+    
     return (
         <div className='flex flex-col h-[auto] px-7 py-3 items-center bg-[#242424] z-10 gap-3 border-b-[1px] border-b-[#353535] fixed left-0 top-0 w-full'>
             <div className='flex justify-between w-full'>
@@ -59,10 +61,10 @@ const Header: React.FC = () => {
                     } */}
                 </div>
                 <div className='flex gap-3 items-center h-full'>
-                    <div className='py-2 px-7 rounded-3xl hidden bg-[#353535] items-center gap-3 lg:flex cursor-pointer hover:bg-[#686767]'>
+                    <div  className='py-2 px-7 rounded-3xl hidden bg-[#353535] items-center gap-3 lg:flex cursor-pointer hover:bg-[#686767]'>
                         <FaChrome /> Switch to Caretify!
                     </div>
-                    <div className='py-3 px-7 rounded-3xl flex bg-[#353535] items-center gap-3 lg:hidden cursor-pointer hover:bg-[#686767]'>
+                    <div  className='py-3 px-7 rounded-3xl flex bg-[#353535] items-center gap-3 lg:hidden cursor-pointer hover:bg-[#686767]'>
                         <FaChrome />
                     </div>
                     <div className='bg-[#353535] rounded-full p-3 cursor-pointer flex flex-col gap-[3px] hover:bg-[#686767]'>

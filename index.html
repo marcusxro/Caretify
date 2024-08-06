@@ -11,5 +11,15 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <button id="add-to-chrome">Add Search Engine to Chrome</button>
+    <script>
+      document.getElementById('add-to-chrome').addEventListener('click', function() {
+        if (window.external && 'AddSearchProvider' in window.external) {
+          window.external.AddSearchProvider('https://caretify.vercel.app/opensearch.xml');
+        } else {
+          alert('Your browser does not support adding search engines automatically.');
+        }
+      });
+    </script>
   </body>
 </html>
