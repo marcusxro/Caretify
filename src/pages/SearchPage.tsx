@@ -1,6 +1,5 @@
 import React, { FormEvent, useState } from 'react'
 import Header from '../comps/Header'
-import axios from 'axios';
 import { CiSearch } from "react-icons/ci";
 import { FaMicrophone } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';

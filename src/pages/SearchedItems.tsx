@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { FormEvent, useEffect, useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const SearchedItems: React.FC = () => {
