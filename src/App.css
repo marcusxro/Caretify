@@ -13,3 +13,17 @@
 .txthdr {
     line-height: 93%;
 }
+
+
+.radiusRight {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radiusLeft {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}

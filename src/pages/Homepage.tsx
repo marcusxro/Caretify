@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { FormEvent, useState } from 'react'
 import Header from '../comps/Header'
 import { FaChrome } from "react-icons/fa";
+import axios from 'axios';
 
 
 const Homepage: React.FC = () => {
+    const [stringVal, setStringVal] = useState<string>('')
+
+    function searchTheWeb(e: FormEvent) {
+        console.log("Preventing default behavior");
+        e.preventDefault();
+        if (stringVal === '') {
+            alert("Please type something");
+            return;
+        }
+
+        axios.get(`https://www.googleapis.com/customsearch/v1?key=AIzaSyA9ND_-eMexUUINOszh_Wy-HstikB6qlZM&cx=b3f81ea3f7409464f&q=${stringVal}`)
+            .then((res) => {
+                console.log(res);
+            }).catch((err) => {
+                console.log(err);
+            });
+    }
+
     return (
         <div>
             <Header />
@@ -22,6 +41,17 @@ const Homepage: React.FC = () => {
                     </div>
                 </div>
 
+            </div>
+
+            <div>
+                <form
+                    onSubmit={searchTheWeb}
+                    action="submit">
+                    <input
+                    value={stringVal}
+                    onChange={(e) => {setStringVal(e.target.value)}}
+                     type="text" />
+                </form>
             </div>
         </div>
     )
