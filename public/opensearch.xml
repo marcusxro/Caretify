@@ -4,7 +4,7 @@
     <Description>Search the web using My Search Engine</Description>
     <Tags>search engine</Tags>
     <Contact>contact@mysearchapp.com</Contact>
-    <Url type="text/html" template="https://caretify.vercel.app/" />
+    <Url type="text/html" method="get" template="https://caretify.vercel.app/search?q={searchTerms}"/>
     <Image height="16" width="16" type="image/x-icon">https://caretify.vercel.app/favicon.ico</Image>
     <Developer>Marcus Salopaso</Developer>
     <Attribution>CARETIFY</Attribution>
